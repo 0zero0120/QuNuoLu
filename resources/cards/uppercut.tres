@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "wuseng"
+card_id = "uppercut"
+card_name = "上勾拳"
+card_type = 0
+rarity = 2
+cost = 2
+description_template = "造成 {damage} 点伤害。施加 {magic} 层虚弱和易伤。"
+target_type = 1
+base_damage = 13
+base_magic_number = 1
+upgrade_bonus_damage = 3
+upgrade_bonus_magic = 1
+status_on_target = "weak|vulnerable"

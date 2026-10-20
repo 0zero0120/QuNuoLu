@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_ruin.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/xingtian_revived.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "xingtian_revived"
+display_name = "刑天·无首"
+sprite_path = "res://assets/art/enemies/xingtian_revived.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 175
+min_floor = 34
+hp_threshold = 0.5
+gold_reward_min = 58
+gold_reward_max = 72
+soul_reward = 58
+starting_thorns = 3
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4")]
+aggressive_intent_pattern = [ExtResource("3"), ExtResource("5")]
+pool_hidden = true
+mechanic_desc = "刑天的第二形态：以乳为目、以脐为口，反伤比断首之前更狠。"

@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_take"]
+script = ExtResource("2")
+label = "取下骨符"
+
+[sub_resource type="Resource" id="Opt_leave_inner"]
+script = ExtResource("2")
+label = "空手退出来"
+
+[sub_resource type="Resource" id="Opt_push"]
+script = ExtResource("2")
+label = "推开骨门走进去"
+cost_hp = 10
+next_options = [SubResource("Opt_take"), SubResource("Opt_leave_inner")]
+
+[sub_resource type="Resource" id="Opt_detour"]
+script = ExtResource("2")
+label = "绕开这道门"
+action = "gain_gold"
+value = 30.0
+
+[resource]
+script = ExtResource("1")
+event_id = "bone_arch"
+title = "骨门"
+text = "门框是用整根肋骨弯成的，中间挂着什么在轻轻磕碰。门缝里透出来的风是温的。"
+options = [SubResource("Opt_push"), SubResource("Opt_detour")]

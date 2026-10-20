@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "硬闯过去"
+action = "lose_hp"
+value = 7.0
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "退回去绕远路"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "thorn_tunnel"
+title = "荆棘隧道"
+text = "通道两侧长满倒刺，而这条路没有岔口。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

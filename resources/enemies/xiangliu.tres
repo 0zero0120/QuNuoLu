@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_weak_2.tres" id="5"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_multi.tres" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/xiangliu.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "xiangliu"
+display_name = "相柳"
+sprite_path = "res://assets/art/enemies/xiangliu.png"
+portrait = ExtResource("90")
+tier = 1
+max_hp = 145
+min_floor = 34
+hp_threshold = 0.5
+gold_reward_min = 40
+gold_reward_max = 55
+soul_reward = 30
+normal_intent_pattern = [ExtResource("6"), ExtResource("3"), ExtResource("4"), ExtResource("5")]
+aggressive_intent_pattern = [ExtResource("3"), ExtResource("2")]
+mechanic_desc = "相柳九首九口，噬咬分九下：它的撕咬是多段结算，而且会一边削弱你的输出，一边把毒吐过来。"

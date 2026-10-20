@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PlayerData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/player_data.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/nuoshi.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+character_id = "nuoshi"
+character_name = "傩师"
+portrait = ExtResource("90")
+order_index = 1
+base_max_hp = 70
+base_energy = 3
+starting_relic_id = "kaishan_mask"
+accent_color = Color(0.86, 0.24, 0.18, 1)
+starting_deck_ids = Array[String](["strike", "strike", "strike", "strike", "strike", "defend", "defend", "defend", "defend", "spark", "blaze", "cinder_shield", "cinder_veil", "heat_wave"])

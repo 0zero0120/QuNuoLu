@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_vulnerable_2.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/xingtian.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "xingtian"
+display_name = "刑天"
+sprite_path = "res://assets/art/enemies/xingtian.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 165
+min_floor = 34
+hp_threshold = 0.5
+gold_reward_min = 58
+gold_reward_max = 72
+soul_reward = 58
+starting_thorns = 2
+revive_enemy_id = "xingtian_revived"
+revive_hp_ratio = 1.0
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")]
+aggressive_intent_pattern = [ExtResource("5"), ExtResource("2")]
+mechanic_desc = "刑天断首而不亡：血被打空时它换一副无首之躯满血再起——这场架要打赢两遍，而它周身反伤，你每打一下都要挨回来。"

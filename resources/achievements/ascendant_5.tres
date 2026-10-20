@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/achievement.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+achievement_id = "ascendant_5"
+display_name = "渐入佳境"
+description = "难度达到 伍。"
+condition = 6
+threshold = 5

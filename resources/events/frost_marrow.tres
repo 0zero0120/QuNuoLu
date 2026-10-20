@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_chisel"]
+script = ExtResource("2")
+label = "凿下那截髓"
+action = "gain_relic"
+cost_hp = 15
+
+[sub_resource type="Resource" id="Opt_scrape"]
+script = ExtResource("2")
+label = "刮些霜下来"
+action = "gain_potion"
+cost_hp = 10
+
+[resource]
+script = ExtResource("1")
+event_id = "frost_marrow"
+title = "霜髓"
+text = "坛底冻着一截白色的髓，坛壁上的霜一直在往下淌，淌到一半就停住，从来落不到地上。"
+pool = "altar"
+options = [SubResource("Opt_chisel"), SubResource("Opt_scrape")]

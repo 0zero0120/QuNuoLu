@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_vulnerable_2.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/shigu.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "shigu"
+display_name = "尸蛊"
+sprite_path = "res://assets/art/enemies/shigu.png"
+portrait = ExtResource("90")
+max_hp = 72
+min_floor = 13
+hp_threshold = 0.5
+gold_reward_min = 20
+gold_reward_max = 32
+soul_reward = 14
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("3"), ExtResource("4"), ExtResource("5")]

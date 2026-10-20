@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/pause_overlay.gd" id="1"]
+
+[node name="PauseOverlay" type="ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.7)
+mouse_filter = 0
+script = ExtResource("1")
+
+[node name="PausePanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -140.0
+offset_right = 140.0
+offset_bottom = 140.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PauseVBox" type="VBoxContainer" parent="PausePanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = -24.0
+theme_override_constants/separation = 18
+
+[node name="PauseTitle" type="Label" parent="PausePanel/PauseVBox"]
+text = "暂停"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 30
+
+[node name="Spacer" type="Control" parent="PausePanel/PauseVBox"]
+custom_minimum_size = Vector2(0, 8)
+
+[node name="ResumeButton" type="Button" parent="PausePanel/PauseVBox"]
+custom_minimum_size = Vector2(200, 48)
+text = "继续游戏"
+theme_override_font_sizes/font_size = 16
+
+[node name="ReturnMenuButton" type="Button" parent="PausePanel/PauseVBox"]
+custom_minimum_size = Vector2(200, 48)
+text = "返回主菜单"
+theme_override_font_sizes/font_size = 16
+
+[node name="QuitButton" type="Button" parent="PausePanel/PauseVBox"]
+custom_minimum_size = Vector2(200, 48)
+text = "退出游戏"
+theme_override_font_sizes/font_size = 16

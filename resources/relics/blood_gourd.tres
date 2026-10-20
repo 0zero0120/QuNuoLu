@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "blood_gourd"
+relic_name = "血葫芦"
+description = "每击败一个敌人，回复 2 点生命。"
+rarity = 1
+trigger_event = "enemy_defeated"
+effect_type = "heal_on_event"
+effect_value = 2.0

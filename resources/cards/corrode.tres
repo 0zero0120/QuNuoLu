@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "gushi"
+card_id = "corrode"
+card_name = "蚀骨"
+card_type = 0
+rarity = 2
+cost = 1
+description_template = "造成 {damage} 点伤害，施加 {magic} 层中毒。"
+target_type = 1
+base_damage = 5
+base_block = 0
+base_magic_number = 2
+upgrade_bonus_damage = 2
+upgrade_bonus_block = 0
+upgrade_bonus_magic = 1
+upgrade_bonus_cost = 0
+status_on_target = "poison"

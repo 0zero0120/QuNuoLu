@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "jianke"
+card_id = "flex"
+card_name = "活动肌肉"
+card_type = 1
+rarity = 1
+cost = 0
+description_template = "获得 {magic} 点力量。本回合结束时失去。"
+target_type = 3
+base_block = 0
+base_magic_number = 2
+upgrade_bonus_magic = 2
+status_on_self = "strength"
+status_temporary = true

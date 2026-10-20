@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="PlayerData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/player_data.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/wuseng.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+character_id = "wuseng"
+character_name = "武僧"
+portrait = ExtResource("90")
+order_index = 3
+base_max_hp = 75
+base_energy = 3
+starting_relic_id = "combo_talisman"
+accent_color = Color(0.95, 0.55, 0.16, 1)
+starting_deck_ids = Array[String](["strike", "strike", "strike", "strike", "strike", "defend", "defend", "defend", "defend", "jab", "piercing_stab", "drinking_gourd", "iron_palm", "tiger_roar"])

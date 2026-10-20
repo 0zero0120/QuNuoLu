@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "burning_blood"
+relic_name = "燃烧之血"
+description = "每场战斗结束后，恢复最大生命值的10%。"
+rarity = 0
+trigger_event = "battle_ended"
+effect_type = "heal_percent"
+effect_value = 0.1
+max_charges = 0
+character_class_restriction = "jianke"

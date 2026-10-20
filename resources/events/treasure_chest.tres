@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "拿走里面的金币"
+action = "gain_gold"
+value = 40.0
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "空手离开"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "treasure_chest"
+title = "积灰的宝箱"
+text = "你发现了一个积灰的宝箱，锁扣早就锈断了。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

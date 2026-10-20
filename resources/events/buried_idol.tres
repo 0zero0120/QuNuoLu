@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_gold"]
+script = ExtResource("2")
+label = "取走压在下面的供品"
+action = "gain_gold"
+value = 60.0
+
+[sub_resource type="Resource" id="Opt_potion"]
+script = ExtResource("2")
+label = "取走神像手里的瓶子"
+action = "gain_potion"
+
+[sub_resource type="Resource" id="Opt_nothing"]
+script = ExtResource("2")
+label = "把土填回去"
+action = "nothing"
+
+[sub_resource type="Resource" id="Opt_dig"]
+script = ExtResource("2")
+label = "把土刨开"
+action = "nothing"
+next_options = [SubResource("Opt_gold"), SubResource("Opt_potion"), SubResource("Opt_nothing")]
+
+[sub_resource type="Resource" id="Opt_leave"]
+script = ExtResource("2")
+label = "转身走开"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "buried_idol"
+title = "埋骨神像"
+text = "半截神像埋在土里，露出的那一面被人反复摩挲过，石面发亮。"
+options = [SubResource("Opt_dig"), SubResource("Opt_leave")]

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_drink"]
+script = ExtResource("2")
+label = "当场喝下去"
+action = "heal_percent"
+value = 0.3
+
+[sub_resource type="Resource" id="Opt_bottle"]
+script = ExtResource("2")
+label = "装进随身的瓶子"
+action = "gain_potion"
+
+[sub_resource type="Resource" id="Opt_draw"]
+script = ExtResource("2")
+label = "打一桶水上来"
+action = "nothing"
+next_options = [SubResource("Opt_drink"), SubResource("Opt_bottle")]
+
+[sub_resource type="Resource" id="Opt_rest"]
+script = ExtResource("2")
+label = "在井边歇一会儿"
+action = "heal_percent"
+value = 0.1
+
+[resource]
+script = ExtResource("1")
+event_id = "weeping_well"
+title = "泣井"
+text = "井壁渗出的水顺着石缝往下走，听久了像是有人在低声数数。"
+options = [SubResource("Opt_draw"), SubResource("Opt_rest")]

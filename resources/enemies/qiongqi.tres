@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_buff.tres" id="3"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/qiongqi.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "qiongqi"
+display_name = "穷奇"
+sprite_path = "res://assets/art/enemies/qiongqi.png"
+portrait = ExtResource("90")
+max_hp = 50
+min_floor = 5
+hp_threshold = 0.5
+gold_reward_min = 10
+gold_reward_max = 20
+soul_reward = 6
+normal_intent_pattern = [ExtResource("2"), ExtResource("2"), ExtResource("3")]
+aggressive_intent_pattern = [ExtResource("2")]

@@ -1,0 +1,131 @@
+name: 试玩反馈
+description: 记录一次试玩后的整体感受，用于毕业论文的易用性分析
+title: "[试玩] "
+labels: ["playtest"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢试玩《驱傩录》。这份反馈会作为毕业论文易用性分析的参考资料。
+        不需要写得多正式，按实际感受填即可；不想公开的内容可以省略。
+
+  - type: input
+    id: version
+    attributes:
+      label: 试玩版本
+      description: 下载的版本号或日期，例如 v0.1 / 2026-10-20
+      placeholder: v0.1
+    validations:
+      required: true
+
+  - type: input
+    id: playtime
+    attributes:
+      label: 游玩时长
+      placeholder: 例如 40 分钟
+    validations:
+      required: true
+
+  - type: dropdown
+    id: character
+    attributes:
+      label: 使用的角色
+      options:
+        - 剑客
+        - 傩师
+        - 蛊师
+        - 武僧
+        - 记不清了
+    validations:
+      required: true
+
+  - type: dropdown
+    id: progress
+    attributes:
+      label: 到达的进度
+      options:
+        - 只到主菜单/选人
+        - 第一章
+        - 第二章
+        - 第三章
+        - 通关
+    validations:
+      required: true
+
+  - type: input
+    id: difficulty
+    attributes:
+      label: 选择的难度
+      placeholder: 例如 难度壹
+
+  - type: dropdown
+    id: clarity
+    attributes:
+      label: 卡牌与战斗信息是否容易看懂
+      options:
+        - "5 - 很清楚"
+        - "4 - 基本清楚"
+        - "3 - 有些地方要猜"
+        - "2 - 经常看不懂"
+        - "1 - 完全看不懂"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: navigation
+    attributes:
+      label: 地图与界面操作是否顺手
+      options:
+        - "5 - 很顺手"
+        - "4 - 基本顺手"
+        - "3 - 一般"
+        - "2 - 经常找不到入口"
+        - "1 - 很难操作"
+    validations:
+      required: true
+
+  - type: textarea
+    id: difficulty_feel
+    attributes:
+      label: 难度感受
+      description: 哪一章、哪类敌人或哪个节点让你觉得太难/太简单？
+      placeholder: 例如：第一章前几层比较轻松，精英怪突然变难……
+
+  - type: textarea
+    id: problems
+    attributes:
+      label: 卡住、报错或崩溃
+      description: 有的话请写清楚在哪一步发生；没有就写「无」。
+      placeholder: 例如：在商店点第三件商品后界面无响应
+    validations:
+      required: true
+
+  - type: textarea
+    id: best_worst
+    attributes:
+      label: 最好玩和最无聊的部分
+    validations:
+      required: true
+
+  - type: textarea
+    id: one_change
+    attributes:
+      label: 如果只能改一件事，你希望改什么
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: 系统与分辨率
+      placeholder: 例如 Windows 11 / 1920×1080
+
+  - type: dropdown
+    id: consent
+    attributes:
+      label: 是否同意在毕业论文中匿名引用你的反馈
+      options:
+        - 同意（只引用内容，不出现个人信息）
+        - 不同意
+    validations:
+      required: true

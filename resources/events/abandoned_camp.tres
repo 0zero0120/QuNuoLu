@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "搜刮挂着的行囊"
+action = "gain_gold"
+value = 30.0
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "翻找火堆边的药水瓶"
+action = "gain_potion"
+
+[resource]
+script = ExtResource("1")
+event_id = "abandoned_camp"
+title = "废弃营地"
+text = "营火只剩一点暗红，行囊还挂在树杈上。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

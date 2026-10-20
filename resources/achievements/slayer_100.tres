@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/achievement.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+achievement_id = "slayer_100"
+display_name = "百人斩"
+description = "累计击杀 100 名敌人。"
+condition = 2
+threshold = 100

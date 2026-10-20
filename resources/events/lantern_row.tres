@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_take_lamp"]
+script = ExtResource("2")
+label = "取一盏提着走"
+action = "gain_potion"
+
+[sub_resource type="Resource" id="Opt_oil"]
+script = ExtResource("2")
+label = "把剩下的灯油全倒在伤口上"
+action = "heal_percent"
+value = 0.25
+
+[resource]
+script = ExtResource("1")
+event_id = "lantern_row"
+title = "灯阵"
+text = "长廊两侧各挑着一排纸灯，绝大多数已经灭了，只剩三盏还亮着，火苗一动不动。"
+options = [SubResource("Opt_take_lamp"), SubResource("Opt_oil")]

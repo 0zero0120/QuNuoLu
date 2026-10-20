@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="IntentResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/intent_resource.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+intent_type = 0
+value = 10
+multiplier = 1
+description_template = "造成 {value} 点伤害。"

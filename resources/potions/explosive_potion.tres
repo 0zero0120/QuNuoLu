@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PotionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/potion_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+potion_id = "explosive_potion"
+potion_name = "爆炸药水"
+description = "对所有敌人造成 15 点伤害。"
+rarity = 1
+effect_type = "deal_damage_all"
+effect_value = 15.0
+is_targeted = false

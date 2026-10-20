@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/achievement.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+achievement_id = "first_win"
+display_name = "首战告捷"
+description = "赢得第一场胜利。"
+condition = 0
+threshold = 1

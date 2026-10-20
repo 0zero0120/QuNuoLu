@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_release_ruin.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/yinglong.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "yinglong"
+display_name = "应龙"
+sprite_path = "res://assets/art/enemies/yinglong.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 310
+min_floor = 17
+hp_threshold = 0.5
+gold_reward_min = 55
+gold_reward_max = 70
+soul_reward = 55
+scripted_intents = true
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4")]
+aggressive_intent_pattern = [ExtResource("5"), ExtResource("3"), ExtResource("4")]
+mechanic_desc = "应龙蓄水，先蓄后发：它按「抬爪 → 架云 → 倾泻」的固定节拍出手，头顶倒计时归零的那一下最重。"

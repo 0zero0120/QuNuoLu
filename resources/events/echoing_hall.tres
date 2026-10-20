@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "停下来仔细听"
+action = "gain_max_hp"
+value = 6.0
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "快步穿过去"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "echoing_hall"
+title = "回响长廊"
+text = "每走一步，身后都会多出一次脚步声。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

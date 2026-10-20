@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_vulnerable.tres" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/bingcan.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "bingcan"
+display_name = "冰蚕"
+sprite_path = "res://assets/art/enemies/bingcan.png"
+portrait = ExtResource("90")
+max_hp = 56
+min_floor = 7
+hp_threshold = 0.5
+gold_reward_min = 14
+gold_reward_max = 24
+soul_reward = 9
+normal_intent_pattern = [ExtResource("2"), ExtResource("2"), ExtResource("3"), ExtResource("4")]

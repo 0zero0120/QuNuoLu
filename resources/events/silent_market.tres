@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_buy"]
+script = ExtResource("2")
+label = "买下摊上那瓶"
+action = "buy_potion"
+value = 75.0
+
+[sub_resource type="Resource" id="Opt_steal"]
+script = ExtResource("2")
+label = "趁人多摸走钱袋"
+action = "gain_gold"
+value = 45.0
+
+[resource]
+script = ExtResource("1")
+event_id = "silent_market"
+title = "哑市"
+text = "集市上人不少，却没有一个出声。摊主把货摆在面前，用炭笔在木牌上写价钱，写完就低头等。"
+options = [SubResource("Opt_buy"), SubResource("Opt_steal")]

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "wuseng"
+card_id = "roundhouse"
+card_name = "回旋踢"
+card_type = 0
+rarity = 1
+cost = 1
+description_template = "对所有敌人造成 {damage} 点伤害。"
+target_type = 2
+base_damage = 6
+base_block = 0
+base_magic_number = 0
+upgrade_bonus_damage = 3
+upgrade_bonus_block = 0
+upgrade_bonus_magic = 0
+upgrade_bonus_cost = 0
+upgraded = false

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_multi_6.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_weak_2.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/tianwu.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "tianwu"
+display_name = "天吴"
+sprite_path = "res://assets/art/enemies/tianwu.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 230
+min_floor = 1
+hp_threshold = 0.5
+gold_reward_min = 50
+gold_reward_max = 62
+soul_reward = 50
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("2"), ExtResource("4"), ExtResource("5")]
+aggressive_intent_pattern = [ExtResource("2"), ExtResource("3")]
+mechanic_desc = "天吴八首，一次张口就是好几下：它的撕咬分段结算，每一段都要单独吃一次格挡。"

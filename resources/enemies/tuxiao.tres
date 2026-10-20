@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_weak.tres" id="3"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/tuxiao.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "tuxiao"
+display_name = "土枭"
+sprite_path = "res://assets/art/enemies/tuxiao.png"
+portrait = ExtResource("90")
+max_hp = 40
+min_floor = 3
+hp_threshold = 0.5
+gold_reward_min = 10
+gold_reward_max = 18
+soul_reward = 6
+normal_intent_pattern = [ExtResource("2"), ExtResource("2"), ExtResource("3")]

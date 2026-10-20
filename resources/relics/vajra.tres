@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "vajra"
+relic_name = "金刚杵"
+description = "战斗开始时，获得 1 点力量。"
+rarity = 1
+trigger_event = "battle_started"
+effect_type = "gain_strength"
+effect_value = 1.0

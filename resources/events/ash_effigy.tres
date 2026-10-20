@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_break"]
+script = ExtResource("2")
+label = "掰下一块，烧进牌里"
+action = "remove_card"
+cost_hp = 8
+
+[sub_resource type="Resource" id="Opt_smear"]
+script = ExtResource("2")
+label = "把灰抹在额上"
+action = "gain_strength"
+value = 3.0
+cost_hp = 12
+
+[resource]
+script = ExtResource("1")
+event_id = "ash_effigy"
+title = "灰俑"
+text = "一尊烧成灰白的人俑立在坛上，胸口的位置空着一块，边缘是往外翻的——像是有什么从里面顶出来的。"
+pool = "altar"
+options = [SubResource("Opt_break"), SubResource("Opt_smear")]

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "nuoshi"
+card_id = "scorching_wind"
+card_name = "索室"
+card_type = 1
+rarity = 2
+cost = 2
+description_template = "对所有敌人施加 {magic} 层虚弱和 {magic} 层灼烧。"
+target_type = 2
+base_damage = 0
+base_block = 0
+base_magic_number = 1
+upgrade_bonus_damage = 0
+upgrade_bonus_block = 0
+upgrade_bonus_magic = 1
+upgrade_bonus_cost = 0
+upgraded = false
+status_on_target = "weak|burn"

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_release_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/jimeng.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "jimeng"
+display_name = "计蒙"
+sprite_path = "res://assets/art/enemies/jimeng.png"
+portrait = ExtResource("90")
+tier = 1
+max_hp = 100
+min_floor = 1
+hp_threshold = 0.5
+gold_reward_min = 28
+gold_reward_max = 40
+soul_reward = 18
+scripted_intents = true
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4")]
+aggressive_intent_pattern = [ExtResource("3"), ExtResource("4")]
+mechanic_desc = "计蒙行雨必先起云：它按「架盾 → 抬手 → 落雨」的固定节拍出手，头顶倒计时归零时那一下最重。"

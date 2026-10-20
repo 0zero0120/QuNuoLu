@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "golden_idol"
+relic_name = "黄金神像"
+description = "每场战斗结束后，额外获得 25 枚金币。"
+rarity = 2
+trigger_event = "battle_ended"
+effect_type = "gain_gold"
+effect_value = 25.0

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_burn_heavy.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_burn.tres" id="5"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/hanba.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "hanba"
+display_name = "旱魃"
+sprite_path = "res://assets/art/enemies/hanba.png"
+portrait = ExtResource("90")
+tier = 1
+max_hp = 150
+min_floor = 34
+hp_threshold = 0.5
+gold_reward_min = 34
+gold_reward_max = 50
+soul_reward = 24
+starting_ward = 3
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")]
+aggressive_intent_pattern = [ExtResource("6"), ExtResource("2"), ExtResource("3")]
+mechanic_desc = "旱魃所过之处赤地千里，旱气护身：它有护体，你每一次平砍都要先被减掉几点才落到血上，多段小伤害最不划算。"

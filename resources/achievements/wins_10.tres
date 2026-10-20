@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/achievement.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+achievement_id = "wins_10"
+display_name = "身经百战"
+description = "累计通关 10 次。"
+condition = 0
+threshold = 10

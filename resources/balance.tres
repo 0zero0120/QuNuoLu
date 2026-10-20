@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="BalanceConfig" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/balance_config.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+base_energy = 3
+cards_per_turn = 5
+starting_gold = 99
+potion_drop_chance = 0.4
+card_reward_skip_gold = 20
+max_ascension = 10
+ascension_hp_step = 0.05
+chapter_hp_step = 0.5
+chapter_damage_step = 0.25
+card_rarity_weights = {
+"COMMON": 60,
+"UNCOMMON": 30,
+"RARE": 10
+}
+card_price_by_rarity = {
+"BASIC": 40,
+"COMMON": 50,
+"UNCOMMON": 75,
+"RARE": 120
+}
+relic_price_by_rarity = {
+"STARTER": 100,
+"COMMON": 150,
+"UNCOMMON": 200,
+"RARE": 260,
+"BOSS": 320
+}
+shop_price_floor_step = 0.03
+card_removal_base_price = 75
+card_removal_price_step = 25
+encounter_max_size = 3
+encounter_grow_every_floors = 5

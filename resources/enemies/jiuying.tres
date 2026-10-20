@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_burn.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_ruin.tres" id="5"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_burn_heavy.tres" id="6"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="7"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_multi.tres" id="8"]
+[ext_resource type="Resource" path="res://resources/intents/intent_buff_ritual.tres" id="9"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/jiuying.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "jiuying"
+display_name = "九婴"
+sprite_path = "res://assets/art/enemies/jiuying.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 340
+min_floor = 34
+hp_threshold = 0.5
+gold_reward_min = 58
+gold_reward_max = 72
+soul_reward = 58
+starting_ward = 3
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("8"), ExtResource("4"), ExtResource("9")]
+aggressive_intent_pattern = [ExtResource("5"), ExtResource("6"), ExtResource("9"), ExtResource("7")]
+mechanic_desc = "九婴九头，水火同源：它身负护体（每次挨打先减几点），会激怒叠力量，还会一边喷火一边下毒。"

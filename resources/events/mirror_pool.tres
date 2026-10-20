@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "伸手抹去其中一张"
+action = "remove_card"
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "移开视线"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "mirror_pool"
+title = "镜湖"
+text = "湖面平滑如镜，映出的却不是你自己，而是你会用到的那些招式。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_hide"]
+script = ExtResource("2")
+label = "钻进岩缝里挨过去"
+action = "gain_strength"
+value = 2.0
+cost_hp = 6
+
+[sub_resource type="Resource" id="Opt_run"]
+script = ExtResource("2")
+label = "低头往前冲"
+action = "lose_max_hp"
+value = 5.0
+
+[resource]
+script = ExtResource("1")
+event_id = "iron_rain"
+title = "铁雨"
+text = "天上落下来的不是雨。你听见一片细密的破空声，比雨点沉，砸在石头上会溅起火星。"
+options = [SubResource("Opt_hide"), SubResource("Opt_run")]

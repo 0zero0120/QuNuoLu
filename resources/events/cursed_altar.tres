@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_relic"]
+script = ExtResource("2")
+label = "取走坛上的遗物"
+action = "gain_relic"
+
+[sub_resource type="Resource" id="Opt_gold"]
+script = ExtResource("2")
+label = "改换一笔金币"
+action = "gain_gold"
+value = 75.0
+
+[sub_resource type="Resource" id="Opt_gold_small"]
+script = ExtResource("2")
+label = "改换一笔金币"
+action = "gain_gold"
+value = 60.0
+
+[sub_resource type="Resource" id="Opt_pay_hp"]
+script = ExtResource("2")
+label = "献上生命上限"
+action = "lose_max_hp"
+value = 4.0
+next_options = [SubResource("Opt_relic"), SubResource("Opt_gold")]
+
+[sub_resource type="Resource" id="Opt_pay_card"]
+script = ExtResource("2")
+label = "把一张牌投入火里"
+action = "remove_card"
+next_options = [SubResource("Opt_relic"), SubResource("Opt_gold_small")]
+
+[sub_resource type="Resource" id="Opt_leave"]
+script = ExtResource("2")
+label = "把手收回来"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "cursed_altar"
+title = "诅咒祭坛"
+text = "石坛上的烛火是青色的，照得人影发绿。坛面刻着一行小字：以我所有，换我未有。"
+pool = "altar"
+options = [SubResource("Opt_pay_hp"), SubResource("Opt_pay_card"), SubResource("Opt_leave")]

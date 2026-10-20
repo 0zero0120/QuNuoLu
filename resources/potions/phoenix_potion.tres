@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PotionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/potion_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+potion_id = "phoenix_potion"
+potion_name = "不死鸟药水"
+description = "回复 60 点生命值。"
+rarity = 2
+effect_type = "heal"
+effect_value = 60.0
+is_targeted = false

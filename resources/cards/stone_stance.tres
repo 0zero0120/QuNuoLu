@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "jianke"
+card_id = "stone_stance"
+card_name = "石壁姿态"
+card_type = 2
+rarity = 1
+cost = 2
+description_template = "获得 {magic} 点敏捷。"
+target_type = 3
+base_magic_number = 2
+upgrade_bonus_magic = 1
+status_on_self = "dexterity"

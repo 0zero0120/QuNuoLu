@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "echo_bell"
+relic_name = "回声铃"
+description = "战斗开始时抽 3 张牌（整局只能触发一次）。"
+rarity = 2
+trigger_event = "battle_started"
+effect_type = "draw_cards"
+effect_value = 3.0
+max_charges = 1

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_relic"]
+script = ExtResource("2")
+label = "收下它压着的东西"
+action = "gain_relic"
+
+[sub_resource type="Resource" id="Opt_gold"]
+script = ExtResource("2")
+label = "换一笔盘缠"
+action = "gain_gold"
+value = 70.0
+
+[sub_resource type="Resource" id="Opt_peel"]
+script = ExtResource("2")
+label = "揭下符纸"
+action = "lose_hp"
+value = 12.0
+next_options = [SubResource("Opt_relic"), SubResource("Opt_gold")]
+
+[sub_resource type="Resource" id="Opt_leave"]
+script = ExtResource("2")
+label = "把符纸按回去"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "charred_idol"
+title = "焦黑神像"
+text = "一尊烧得焦黑的石像，五官早辨不出来了，底座上还粘着没烧尽的符纸。"
+pool = "altar"
+options = [SubResource("Opt_peel"), SubResource("Opt_leave")]

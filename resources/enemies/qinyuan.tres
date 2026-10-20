@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_poison_heavy.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal_qinyuan.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/qinyuan.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "qinyuan"
+display_name = "钦原"
+sprite_path = "res://assets/art/enemies/qinyuan.png"
+portrait = ExtResource("90")
+tier = 1
+max_hp = 110
+min_floor = 1
+hp_threshold = 0.5
+gold_reward_min = 32
+gold_reward_max = 48
+soul_reward = 22
+starting_thorns = 2
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("2")]
+aggressive_intent_pattern = [ExtResource("3"), ExtResource("2"), ExtResource("5")]
+mechanic_desc = "钦原是毒蜂之王，尾针带刺：它身上有反伤，你每打它一下都要被蜇回来，同时它还一直往你身上叠毒。"

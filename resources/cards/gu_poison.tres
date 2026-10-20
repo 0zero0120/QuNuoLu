@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "gushi"
+card_id = "gu_poison"
+card_name = "蛊毒"
+card_type = 1
+rarity = 1
+cost = 1
+description_template = "施加 {magic} 层中毒。"
+target_type = 1
+base_damage = 0
+base_block = 0
+base_magic_number = 3
+upgrade_bonus_damage = 0
+upgrade_bonus_block = 0
+upgrade_bonus_magic = 2
+upgrade_bonus_cost = 0
+status_on_target = "poison"

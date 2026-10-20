@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "thorn_armor"
+relic_name = "荆棘护甲"
+description = "战斗开始时，获得 3 点敏捷。"
+rarity = 3
+trigger_event = "battle_started"
+effect_type = "gain_dexterity"
+effect_value = 3.0

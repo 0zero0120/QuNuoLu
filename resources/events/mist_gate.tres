@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_reach"]
+script = ExtResource("2")
+label = "伸手进雾里"
+action = "gain_potion"
+
+[sub_resource type="Resource" id="Opt_around"]
+script = ExtResource("2")
+label = "沿墙绕过去"
+action = "gain_gold"
+value = 30.0
+
+[resource]
+script = ExtResource("1")
+event_id = "mist_gate"
+title = "雾门"
+text = "一道矮矮的石门槛，门里是漫出来的白雾。雾里偶尔有东西擦过你的衣袖，很轻，像是有人侧身让路。"
+options = [SubResource("Opt_reach"), SubResource("Opt_around")]

@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_relic"]
+script = ExtResource("2")
+label = "取走它掌心的东西"
+action = "gain_relic"
+
+[sub_resource type="Resource" id="Opt_potion"]
+script = ExtResource("2")
+label = "换一瓶它吐出的药水"
+action = "gain_potion"
+
+[sub_resource type="Resource" id="Opt_wrist"]
+script = ExtResource("2")
+label = "让它握住手腕"
+action = "lose_max_hp"
+value = 3.0
+next_options = [SubResource("Opt_relic"), SubResource("Opt_potion")]
+
+[sub_resource type="Resource" id="Opt_pull_back"]
+script = ExtResource("2")
+label = "把手抽回来"
+action = "nothing"
+
+[sub_resource type="Resource" id="Opt_reach"]
+script = ExtResource("2")
+label = "把手探进水里"
+action = "nothing"
+next_options = [SubResource("Opt_wrist"), SubResource("Opt_pull_back")]
+
+[sub_resource type="Resource" id="Opt_leave"]
+script = ExtResource("2")
+label = "离开水边"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "drowned_shrine"
+title = "沉水神龛"
+text = "半座神龛沉在水里，水下伸出的那只手一直保持着托举的姿势。"
+pool = "altar"
+options = [SubResource("Opt_reach"), SubResource("Opt_leave")]

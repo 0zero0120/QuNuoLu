@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "花钱买一瓶"
+action = "buy_potion"
+value = 15.0
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "婉言拒绝"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "wandering_merchant"
+title = "神秘旅人"
+text = "一位披斗篷的旅人掀开箱子，里面是几瓶泛着微光的药水。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

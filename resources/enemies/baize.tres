@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_curse.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="5"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_weak_2.tres" id="6"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_ruin.tres" id="7"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/baize.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "baize"
+display_name = "白泽"
+sprite_path = "res://assets/art/enemies/baize.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 330
+min_floor = 34
+hp_threshold = 0.5
+gold_reward_min = 58
+gold_reward_max = 72
+soul_reward = 58
+starting_ward = 2
+starting_artifact = 2
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6")]
+aggressive_intent_pattern = [ExtResource("7"), ExtResource("4"), ExtResource("2")]
+mechanic_desc = "白泽知万物，最会拿你手里的牌做文章：它身负神器（替你挡掉前两次减益）与护体，还会往你抽牌堆里塞打不出的「心魔」。"

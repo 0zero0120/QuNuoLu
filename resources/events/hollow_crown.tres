@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_inside"]
+script = ExtResource("2")
+label = "从冠里摸出什么"
+
+[sub_resource type="Resource" id="Opt_sand"]
+script = ExtResource("2")
+label = "把冠倒过来抖一抖"
+action = "gain_gold"
+value = 110.0
+
+[sub_resource type="Resource" id="Opt_wear"]
+script = ExtResource("2")
+label = "戴上去"
+action = "lose_max_hp"
+value = 12.0
+next_options = [SubResource("Opt_inside"), SubResource("Opt_sand")]
+
+[sub_resource type="Resource" id="Opt_kick"]
+script = ExtResource("2")
+label = "一脚把它踢开"
+
+[resource]
+script = ExtResource("1")
+event_id = "hollow_crown"
+title = "空冠"
+text = "坛上供着一顶冠，内里被掏空了，只剩一层薄薄的壳。凑近能看见壳里侧刻满了名字，一个压着一个。"
+pool = "altar"
+options = [SubResource("Opt_wear"), SubResource("Opt_kick")]

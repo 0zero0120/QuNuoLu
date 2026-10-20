@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "把金刚杵嵌进凹槽"
+action = "gain_relic"
+require_relic = "vajra"
+blocked_text = "凹槽的形状很眼熟，可你翻遍全身也拿不出能嵌进去的东西。"
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "记下这里，先走一步"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "sealed_vault"
+title = "封死的石门"
+text = "石门封得严丝合缝，正中凿着一个凹槽。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

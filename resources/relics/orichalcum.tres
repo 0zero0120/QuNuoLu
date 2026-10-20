@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "orichalcum"
+relic_name = "山铜"
+description = "回合结束时如果你没有格挡，获得 6 点格挡。"
+rarity = 1
+trigger_event = "turn_ended"
+effect_type = "gain_block"
+effect_value = 6.0

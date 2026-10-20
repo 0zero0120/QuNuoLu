@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PotionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/potion_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+potion_id = "doom_flask"
+potion_name = "万毒药水"
+description = "对指定的敌人施加 25 层中毒。"
+rarity = 2
+effect_type = "apply_poison"
+effect_value = 25.0
+is_targeted = true

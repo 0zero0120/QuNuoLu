@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "nuoshi"
+card_id = "inner_fire"
+card_name = "请神"
+card_type = 2
+rarity = 2
+cost = 2
+description_template = "获得 {magic} 点仪式。"
+target_type = 3
+base_magic_number = 1
+upgrade_bonus_magic = 1
+status_on_self = "ritual"

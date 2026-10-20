@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_poison.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend.tres" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/fei.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "fei"
+display_name = "蜚"
+sprite_path = "res://assets/art/enemies/fei.png"
+portrait = ExtResource("90")
+max_hp = 58
+min_floor = 9
+hp_threshold = 0.5
+gold_reward_min = 16
+gold_reward_max = 26
+soul_reward = 12
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("2")]
+split_enemy_id = "guchong"
+split_count = 2
+split_hp_threshold = 0.5

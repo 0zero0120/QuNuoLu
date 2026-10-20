@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "nuoshi"
+card_id = "flame_slash"
+card_name = "执戈"
+card_type = 0
+rarity = 2
+cost = 2
+description_template = "造成 {damage} 点伤害。获得 {magic} 点力量。"
+target_type = 1
+base_damage = 8
+base_magic_number = 1
+upgrade_bonus_magic = 2
+status_on_self = "strength"

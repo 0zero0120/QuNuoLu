@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "研读那几页残篇"
+action = "upgrade_card"
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "卷走装书的木匣"
+action = "gain_gold"
+value = 35.0
+
+[resource]
+script = ExtResource("1")
+event_id = "forgotten_library"
+title = "遗忘书库"
+text = "书架上只剩零星几册，纸页脆得一碰就碎。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

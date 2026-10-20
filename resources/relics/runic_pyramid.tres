@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "runic_pyramid"
+relic_name = "符文金字塔"
+description = "每场战斗开始时，额外抽 3 张牌。"
+rarity = 4
+trigger_event = "battle_started"
+effect_type = "draw_cards"
+effect_value = 3.0

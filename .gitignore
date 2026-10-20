@@ -1,0 +1,25 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# 构建产物
+/build/
+*.pck
+*.exe
+
+# 根目录下的开发探针、试听素材、截图与日志（保留在本地，不进公开仓库）
+/_*
+*.log
+*.out
+
+# 本地备份与编辑器/工具私有配置
+/.备份_*
+/.改名备份*
+/.claude/
+/.funplay/
+/.mcp.json
+
+# 系统垃圾文件
+Thumbs.db
+desktop.ini
+.DS_Store

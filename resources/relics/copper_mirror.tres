@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "copper_mirror"
+relic_name = "铜镜"
+description = "每次进入休息处，额外获得 40 金币。"
+rarity = 1
+trigger_event = "rest_site"
+effect_type = "gain_gold"
+effect_value = 40.0

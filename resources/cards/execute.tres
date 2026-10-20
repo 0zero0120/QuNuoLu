@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "wuseng"
+card_id = "execute"
+card_name = "处决"
+card_type = 0
+rarity = 3
+cost = 2
+description_template = "造成 {damage} 点伤害。施加 {magic} 层易伤。"
+target_type = 1
+base_damage = 16
+base_magic_number = 2
+upgrade_bonus_magic = 1
+status_on_target = "vulnerable"

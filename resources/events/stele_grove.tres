@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_carve"]
+script = ExtResource("2")
+label = "从牌里挑一张，把名字刻上去"
+action = "remove_card"
+cost_hp = 6
+
+[sub_resource type="Resource" id="Opt_blood"]
+script = ExtResource("2")
+label = "割开手掌，往碑座上浇血"
+action = "gain_gold"
+value = 90.0
+cost_hp = 12
+
+[resource]
+script = ExtResource("1")
+event_id = "stele_grove"
+title = "碑林"
+text = "上百块石碑立在坛场上，每一块都刻满了名字。只有最末那块还是空白的，碑脚新凿过，石屑还没扫。"
+pool = "altar"
+options = [SubResource("Opt_carve"), SubResource("Opt_blood")]

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "拔出那半截断剑"
+action = "gain_relic"
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "翻找骨堆里的口袋"
+action = "gain_gold"
+value = 25.0
+
+[resource]
+script = ExtResource("1")
+event_id = "bone_pile"
+title = "白骨堆"
+text = "一堆白骨中间插着半截断剑，剑柄上还缠着发黑的布条。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

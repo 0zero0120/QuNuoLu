@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "jianke"
+card_id = "crouch"
+card_name = "蹲伏"
+card_type = 1
+rarity = 1
+cost = 1
+description_template = "获得 {block} 点格挡。"
+target_type = 3
+base_block = 7

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="PotionData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/potion_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+potion_id = "ember_flask"
+potion_name = "余烬药水"
+description = "对指定的敌人施加 6 层灼烧。"
+rarity = 0
+effect_type = "apply_burn"
+effect_value = 6.0
+is_targeted = true

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "bronze_gong"
+relic_name = "铜锣"
+description = "每场战斗的第 1 回合，额外获得 2 点能量。"
+rarity = 3
+trigger_event = "first_turn_started"
+effect_type = "gain_energy_temp"
+effect_value = 2.0

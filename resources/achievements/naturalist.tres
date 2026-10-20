@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/achievement.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+achievement_id = "naturalist"
+display_name = "见多识广"
+description = "在百科大全里见过所有敌人。"
+condition = 11
+threshold = 0

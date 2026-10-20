@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "gushi"
+card_id = "twin_fangs"
+card_name = "双牙"
+card_type = 0
+rarity = 2
+cost = 1
+description_template = "造成 {damage} 点伤害 2 次。"
+target_type = 1
+base_damage = 4
+upgrade_bonus_damage = 2
+hit_count = 2

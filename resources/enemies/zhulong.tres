@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_buff_dexterity.tres" id="5"]
+[ext_resource type="Resource" path="res://resources/intents/intent_buff_ritual.tres" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/zhulong.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "zhulong"
+display_name = "烛龙"
+sprite_path = "res://assets/art/enemies/zhulong.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 300
+min_floor = 17
+hp_threshold = 0.5
+gold_reward_min = 55
+gold_reward_max = 70
+soul_reward = 55
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6")]
+aggressive_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("6")]
+mechanic_desc = "烛龙睁眼为昼、闭眼为夜，越打越盛：它会「激怒」，之后每回合白拿一份力量，一直滚到这场架打完。"

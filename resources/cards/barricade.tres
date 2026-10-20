@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "jianke"
+card_id = "barricade"
+card_name = "壁垒"
+card_type = 2
+rarity = 3
+cost = 3
+description_template = "获得 {block} 点格挡。获得 {magic} 点敏捷。消耗。"
+target_type = 3
+base_block = 30
+base_magic_number = 3
+upgrade_bonus_block = 8
+upgrade_bonus_magic = 1
+exhaust_on_use = true

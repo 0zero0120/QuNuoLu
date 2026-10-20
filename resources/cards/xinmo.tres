@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = ""
+card_id = "xinmo"
+card_name = "心魔"
+card_type = 1
+rarity = 0
+cost = 0
+description_template = "无法打出。\n占着手牌，直到被弃掉。"
+target_type = 0
+base_damage = 0
+base_block = 0
+base_magic_number = 0
+upgrade_bonus_damage = 0
+upgrade_bonus_block = 0
+upgrade_bonus_magic = 0
+upgrade_bonus_cost = 0
+unplayable = true

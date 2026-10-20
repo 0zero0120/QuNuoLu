@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_buff_dexterity.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_multi_light.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/kui.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "kui"
+display_name = "夔"
+sprite_path = "res://assets/art/enemies/kui.png"
+portrait = ExtResource("90")
+tier = 1
+max_hp = 105
+min_floor = 17
+hp_threshold = 0.5
+gold_reward_min = 30
+gold_reward_max = 45
+soul_reward = 20
+normal_intent_pattern = [ExtResource("2"), ExtResource("5"), ExtResource("3"), ExtResource("4")]
+aggressive_intent_pattern = [ExtResource("2"), ExtResource("5")]
+mechanic_desc = "夔一足，声如雷：它一边给自己叠敏捷（格挡越堆越厚），一边用多段踢踏压上来，拖久了会很难啃。"

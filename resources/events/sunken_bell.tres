@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_ring"]
+script = ExtResource("2")
+label = "撞响它，让余音替你撑一撑"
+action = "gain_max_hp"
+value = 10.0
+cost_hp = 8
+
+[sub_resource type="Resource" id="Opt_leave"]
+script = ExtResource("2")
+label = "拨开水草就走"
+
+[resource]
+script = ExtResource("1")
+event_id = "sunken_bell"
+title = "沉钟"
+text = "一口半沉在泥里的钟，钟舌上缠满水草。把手贴上去，能觉出里面还压着一下没敲完的余音。"
+options = [SubResource("Opt_ring"), SubResource("Opt_leave")]

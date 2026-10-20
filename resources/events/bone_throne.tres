@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_str"]
+script = ExtResource("2")
+label = "收下这份力气"
+action = "gain_strength"
+value = 2.0
+
+[sub_resource type="Resource" id="Opt_gold_big"]
+script = ExtResource("2")
+label = "收下这份家当"
+action = "gain_gold"
+value = 90.0
+
+[sub_resource type="Resource" id="Opt_heal"]
+script = ExtResource("2")
+label = "敷在伤口上"
+action = "heal_full"
+
+[sub_resource type="Resource" id="Opt_gold_small"]
+script = ExtResource("2")
+label = "收进袋里"
+action = "gain_gold"
+value = 45.0
+
+[sub_resource type="Resource" id="Opt_sit"]
+script = ExtResource("2")
+label = "坐上去"
+action = "lose_max_hp"
+value = 5.0
+next_options = [SubResource("Opt_str"), SubResource("Opt_gold_big")]
+
+[sub_resource type="Resource" id="Opt_scrape"]
+script = ExtResource("2")
+label = "只从扶手上刮些骨粉"
+action = "lose_hp"
+value = 8.0
+next_options = [SubResource("Opt_heal"), SubResource("Opt_gold_small")]
+
+[sub_resource type="Resource" id="Opt_leave"]
+script = ExtResource("2")
+label = "绕开它"
+action = "nothing"
+
+[resource]
+script = ExtResource("1")
+event_id = "bone_throne"
+title = "白骨王座"
+text = "一张用白骨堆成的椅子，扶手被磨得发亮。坐过它的人后来都下来了，只是不太一样了。"
+pool = "altar"
+options = [SubResource("Opt_sit"), SubResource("Opt_scrape"), SubResource("Opt_leave")]

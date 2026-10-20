@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "venom_sac"
+relic_name = "万毒囊"
+description = "每场战斗开始时，对所有敌人施加 2 层中毒。"
+rarity = 0
+trigger_event = "battle_started"
+effect_type = "poison_all"
+effect_value = 2.0
+max_charges = 0
+character_class_restriction = "gushi"

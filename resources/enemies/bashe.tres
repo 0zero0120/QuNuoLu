@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_poison.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_poison_heavy.tres" id="5"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_ruin.tres" id="6"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_multi.tres" id="7"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/bashe.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "bashe"
+display_name = "巴蛇"
+sprite_path = "res://assets/art/enemies/bashe.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 320
+min_floor = 17
+hp_threshold = 0.5
+gold_reward_min = 55
+gold_reward_max = 70
+soul_reward = 55
+starting_thorns = 2
+normal_intent_pattern = [ExtResource("2"), ExtResource("7"), ExtResource("3"), ExtResource("4"), ExtResource("5")]
+aggressive_intent_pattern = [ExtResource("6"), ExtResource("7"), ExtResource("5")]
+mechanic_desc = "巴蛇吞象，鳞甲带毒：它身上有反伤，你每打一下都被弹回来，而且它的毒是无视格挡的真伤。"

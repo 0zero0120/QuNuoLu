@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_vulnerable_2.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/xiezhi.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "xiezhi"
+display_name = "獬豸"
+sprite_path = "res://assets/art/enemies/xiezhi.png"
+portrait = ExtResource("90")
+tier = 1
+max_hp = 110
+min_floor = 1
+hp_threshold = 0.5
+gold_reward_min = 35
+gold_reward_max = 50
+soul_reward = 25
+starting_artifact = 2
+normal_intent_pattern = [ExtResource("2"), ExtResource("2"), ExtResource("3"), ExtResource("4")]
+aggressive_intent_pattern = [ExtResource("2"), ExtResource("2"), ExtResource("3")]
+mechanic_desc = "獬豸能辨曲直，也挡邪祟：它身负神器，会替你抵掉前两次减益——虚弱、易伤、中毒都上不去。"

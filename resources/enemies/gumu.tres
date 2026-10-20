@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_poison.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend.tres" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/gumu.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "gumu"
+display_name = "蛊母"
+sprite_path = "res://assets/art/enemies/gumu.png"
+portrait = ExtResource("90")
+max_hp = 42
+min_floor = 8
+hp_threshold = 0.5
+gold_reward_min = 14
+gold_reward_max = 22
+soul_reward = 9
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("3"), ExtResource("4")]
+split_enemy_id = "guchong"
+split_count = 2
+split_hp_threshold = 0.5

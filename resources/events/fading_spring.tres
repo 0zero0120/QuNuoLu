@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Option_1"]
+script = ExtResource("2")
+label = "趁现在喝个够"
+action = "heal_full"
+
+[sub_resource type="Resource" id="Option_2"]
+script = ExtResource("2")
+label = "把水囊灌满带走"
+action = "gain_potion"
+
+[resource]
+script = ExtResource("1")
+event_id = "fading_spring"
+title = "褪色泉眼"
+text = "泉眼正在干涸，再不取就什么也剩不下了。"
+options = [SubResource("Option_1"), SubResource("Option_2")]

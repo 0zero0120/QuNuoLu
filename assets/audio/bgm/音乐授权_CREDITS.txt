@@ -1,0 +1,54 @@
+《驱傩录》背景音乐素材授权说明
+================================
+
+游戏内文件：main_theme.ogg（《驱傩录》融合版主题，120 秒无缝循环，44.1kHz 立体声）
+环境音文件：ambience.ogg（山风）
+
+本曲只使用真录音片段拼接，没有合成器、没有电子鼓、没有人声。
+所有素材均做过裁剪、变调/变速、EQ、淡入淡出、循环拼接与响度归一；
+混响为卷积空间处理，不是乐器音色。
+
+素材来源与授权
+--------------
+
+古筝      xserra — GuZheng
+          https://freesound.org/people/xserra/sounds/162088/ — CC BY 4.0
+
+古琴      RafaelCaro — Guqin-song (Mei Hua San Nong)
+          https://freesound.org/people/RafaelCaro/sounds/176265/ — CC BY 4.0
+
+箫        xserra — xiao-2
+          https://freesound.org/people/xserra/sounds/161911/ — CC BY 4.0
+
+埙        franeknflute — Xun Sample.wav
+          https://freesound.org/people/franeknflute/sounds/200419/ — CC BY 4.0
+
+铜钟      the_very_Real_Horst — Chinese Dragon Tempel Bell VI cross-fade
+          https://freesound.org/people/the_very_Real_Horst/sounds/241069/ — CC0 1.0
+
+战鼓      RTB45 — Drums of Xian, China
+          https://freesound.org/people/RTB45/sounds/234922/ — CC BY 4.0
+
+大鼓鼓边  sazanami12 — Chinese Bass Drum Dagu Rim Shot
+          https://freesound.org/people/sazanami12/sounds/856560/ — CC0 1.0
+
+锣 1/2/3  kevp888 — CD_VIE_007FX_Gong_1 / 008FX_Gong_2 / 009FX_Gong_3
+          https://freesound.org/people/kevp888/sounds/710378/
+          https://freesound.org/people/kevp888/sounds/710557/
+          https://freesound.org/people/kevp888/sounds/710760/ — CC BY 4.0
+
+山风      kyles — mountain wind heavy strong gusts Swiss Alps
+          https://freesound.org/people/kyles/sounds/454092/ — CC0 1.0
+
+编钟说明
+--------
+
+没有找到可商用的真编钟合奏录音。曲中的“编钟”是把上面那支真铜钟（241069）
+按音高重采样得到的八个音：D3、A3、D4、G4、F4、A4、C5、D5。
+音色取自真铜钟，但不是真正的编钟合奏实录。
+
+授权文字
+--------
+
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+CC0 1.0:  https://creativecommons.org/publicdomain/zero/1.0/

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "nuoshi"
+card_id = "cinder_veil"
+card_name = "香火"
+card_type = 1
+rarity = 1
+cost = 1
+description_template = "获得 {block} 点格挡，对所有敌人施加 {magic} 层灼烧。"
+target_type = 2
+base_damage = 0
+base_block = 6
+base_magic_number = 1
+upgrade_bonus_damage = 0
+upgrade_bonus_block = 4
+upgrade_bonus_magic = 1
+upgrade_bonus_cost = 0
+upgraded = false
+status_on_target = "burn"

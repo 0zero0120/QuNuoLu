@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_multi_light.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_weak_2.tres" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/yingzhao.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "yingzhao"
+display_name = "英招"
+sprite_path = "res://assets/art/enemies/yingzhao.png"
+portrait = ExtResource("90")
+tier = 1
+max_hp = 140
+min_floor = 17
+hp_threshold = 0.5
+gold_reward_min = 36
+gold_reward_max = 52
+soul_reward = 26
+starting_thorns = 3
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")]
+aggressive_intent_pattern = [ExtResource("3"), ExtResource("2")]
+mechanic_desc = "英招周身有棘：你每打它一下都会被反伤，越是靠多段小伤害越吃亏——攒一记重拳比连打好。"

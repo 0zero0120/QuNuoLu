@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "jade_pendant"
+relic_name = "玉佩"
+description = "每回合开始时，额外抽 1 张牌。"
+rarity = 2
+trigger_event = "turn_started"
+effect_type = "draw_cards"
+effect_value = 1.0

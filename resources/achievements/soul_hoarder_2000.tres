@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Achievement" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/achievement.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+achievement_id = "soul_hoarder_2000"
+display_name = "魂山"
+description = "累计积攒 2000 点魂。"
+condition = 7
+threshold = 2000

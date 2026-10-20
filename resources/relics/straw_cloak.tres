@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "straw_cloak"
+relic_name = "蓑衣"
+description = "每抽到一张牌，获得 1 点格挡（整局最多触发 10 次）。"
+rarity = 1
+trigger_event = "card_drawn"
+effect_type = "gain_block"
+effect_value = 1.0
+max_charges = 10

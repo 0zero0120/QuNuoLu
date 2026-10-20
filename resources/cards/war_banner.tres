@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+character_id = "jianke"
+card_id = "war_banner"
+card_name = "战旗"
+card_type = 2
+rarity = 2
+cost = 3
+description_template = "获得 {magic} 点力量。"
+target_type = 3
+base_magic_number = 3
+upgrade_bonus_magic = 1
+status_on_self = "strength"

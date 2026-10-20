@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/enemy_data.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_heavy.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/intents/intent_attack_brutal.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/intents/intent_defend_heavy.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_vulnerable_2.tres" id="5"]
+[ext_resource type="Resource" path="res://resources/intents/intent_debuff_weak_2.tres" id="6"]
+[ext_resource type="Resource" path="res://resources/intents/intent_curse.tres" id="7"]
+[ext_resource type="Texture2D" path="res://assets/art/enemies/hundun.png" id="90"]
+
+[resource]
+script = ExtResource("1")
+enemy_id = "hundun"
+display_name = "混沌"
+sprite_path = "res://assets/art/enemies/hundun.png"
+portrait = ExtResource("90")
+tier = 2
+max_hp = 235
+min_floor = 1
+hp_threshold = 0.5
+gold_reward_min = 50
+gold_reward_max = 65
+soul_reward = 50
+normal_intent_pattern = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("7"), ExtResource("5"), ExtResource("6")]
+aggressive_intent_pattern = [ExtResource("3"), ExtResource("7"), ExtResource("4")]
+mechanic_desc = "混沌面目不分，最会往你牌堆里塞废牌：它出手时会塞一张打不出的「心魔」，抽到就是白白废掉一张手牌。"

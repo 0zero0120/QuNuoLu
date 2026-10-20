@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="EventData" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/event_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/resources/event_option.gd" id="2"]
+
+[sub_resource type="Resource" id="Opt_write"]
+script = ExtResource("2")
+label = "蘸一笔，改写自己的一手字"
+action = "upgrade_card"
+
+[sub_resource type="Resource" id="Opt_pocket"]
+script = ExtResource("2")
+label = "把砚台揣走"
+action = "gain_gold"
+value = 60.0
+
+[resource]
+script = ExtResource("1")
+event_id = "ink_pool"
+title = "墨池"
+text = "一方质地极好的砚台摆在案上，墨还润着，边缘有一圈新鲜的指印——像是刚才还有人在这儿写字。"
+options = [SubResource("Opt_write"), SubResource("Opt_pocket")]

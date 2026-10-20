@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RelicData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/relic_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+relic_id = "taiji_diagram"
+relic_name = "太极图"
+description = "每打出一张能力牌，抽 1 张牌。"
+rarity = 3
+trigger_event = "card_played"
+effect_target = "ability"
+effect_type = "draw_cards"
+effect_value = 1.0
