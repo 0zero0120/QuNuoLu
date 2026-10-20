@@ -39,7 +39,7 @@
 
 ## 下载试玩
 
-Windows 试玩版将在 GitHub Releases 提供。
+[下载 v0.1.0 试玩版（Windows）](https://github.com/0zero0120/QuNuoLu/releases/latest)，文件名为 `QuNuoLu-v0.1.0-Windows.zip`。
 
 - 下载后解压，运行 `驱傩录.exe` 即可，无需安装 Godot。
 - 存档位于 `%APPDATA%\驱傩录\`，删除该目录即可清空进度。
